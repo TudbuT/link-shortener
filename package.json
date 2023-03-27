@@ -1,0 +1,17 @@
+{
+  "name": "nickwilde",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "PORT=80 node index.js",
+    "start_ssl": "PORT=80 SSLPORT=443 SSLDIR=/etc/letsencrypt/live node index.js"
+  },
+  "author": "TudbuT",
+  "license": "MIT",
+  "dependencies": {
+    "bdb.js": "^0.3.2-c",
+    "express": "^4.18.2"
+  }
+}

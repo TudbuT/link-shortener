@@ -1,0 +1,161 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background-color: #eeddee;
+}
+
+div {
+    display: block;
+}
+
+div.navbar {
+    display: inline-block;
+    margin: 0;
+    padding-left: 2.5em;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    min-height: 5em;
+    background-color: black;
+    color: white;
+}
+
+div.body {
+    margin: auto;
+    margin-top: 50px;
+    width: min(90%, 600px);
+}
+
+div.navbar-content {
+    width: calc(100% - 5em);
+}
+
+table.spread {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.spread td, table.spread tr, table.spread tbody {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+table.spread td.left {
+    text-align: left;
+    width: 100%;
+}
+
+table.spread td.right {
+    text-align: right;
+    width: max-content;
+}
+
+.classy {
+    font-family: cursive;
+}
+
+input,select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid gray;
+    background-color: #ddeeff;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+input:focus {
+    border-width: 1px;
+    background-color: #ccddee;
+}
+input:focus-visible {
+    outline: 0;
+}
+
+button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid gray;
+    background-color: #f2e9e4;
+    color: black;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+button:active {
+    background-color: #d2c9c4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+input,select {
+    width: 100%;
+}
+
+
+div.successbox {
+    width: calc(100% - 40px);
+    border: 1px solid darkgreen;
+    background-color: #ddffcc;
+    padding: 20px;
+}
+
+.successbox button {
+    background-color: gray;
+    color: white;
+}
+
+@keyframes height_transition {
+    0% {
+        opacity: 0%;
+        max-height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    10% {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    100% {
+        opacity: 100%;
+        max-height: 20em;
+    }
+}
+
+#box {
+    overflow: hidden;
+    animation: ease height_transition 1s;
+}
+
+button {
+    word-break: keep-all;
+    width: 10em;
+}
+
+button img {
+    display: inline-block;
+    height: 1.1em;
+    vertical-align: middle;
+}
+
+img.main {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+#spacer {
+    height: 30vh;
+}

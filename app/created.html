@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no"/>
+        <meta name="og:title" content="Nickwil.de fluffy link shortener"/>
+        <title>Nickwil.de</title>
+        <link rel="stylesheet" href="/css"/>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <script>
+            function copy(element) {
+                var el = document.getElementById(element);
+                el.select();
+                navigator.clipboard.writeText(el.value);
+            }
+
+            window.history.replaceState({}, '', '/')
+        </script>
+    </head>
+    <body>
+        <!--div class="navbar">
+            <div class="navbar-content">
+                <table class="spread">
+                    <tr>
+                        <td class="left">
+                            <h1><a href="/">Nickwil.de Link shortener</a></h1>
+                        </td>
+                        <td class="right">
+                            <h2 class="classy"><a href="https://meowly.org">meowly.org</a></h2>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div-->
+        <div class="body">
+            <img class="main" src="/icon.png">
+            <center>Nickwil.de is your furry link shortener for making links short and fluffy.</center>
+            <br>
+            <br>
+            <h3>Shorten a link</h3>
+            <form class="creation">
+                <select name="domain">
+                    <option name="nickwil.de">nickwil.de</option>
+                </select>
+                <table class="spread">
+                    <tr>
+                        <td class="left">
+                            <input autocomplete="off" type="text" placeholder="https://example.com" name="dest">
+                        </td>
+                        <td class="right">
+                            <button type="submit">Shorten <img src="/link.svg"></button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <br>
+            <div id="box" class="successbox creation">
+                <b>Success!</b><br><br>
+                Your Link (ID <!--LINK-->) has been created successfully!<br>
+                Your deletion key is <!--KEY-->. Make sure to keep it safe!<br>
+                <br>
+                <table class="spread">
+                    <tr>
+                        <td class="left">
+                            <input disabled id="link" type="text" value="https://<!--DOMAIN-->?l=<!--LINK-->">
+                        </td>
+                        <td class="right">
+                            <button onclick="copy('link')">Copy</button>
+                        </td>
+                    </tr>
+                </table>
+                <table class="spread">
+                    <tr>
+                        <td class="left">
+                            <input disabled id="key" type="text" value="<!--KEY-->">
+                        </td>
+                        <td class="right">
+                            <button onclick="copy('key')">Copy</button>
+                        </td>
+                    </tr>
+                </table>
+                <br><br>
+                <a href="/"><button type="button">Back</button></a>
+            </div>
+            <div id="spacer"></div>
+        </div>
+    </body>
+</html>
